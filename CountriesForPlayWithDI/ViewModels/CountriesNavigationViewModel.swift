@@ -9,10 +9,8 @@ import Foundation
 
 class CountriesNavigationViewModel: ObservableObject {
     enum NavigationPathItem {
-        case list
+        case main, detail(Country)
     }
     
     @Published var navigationPath: [NavigationPathItem] = []
-    
-    
 }

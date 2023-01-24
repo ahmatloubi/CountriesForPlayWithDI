@@ -14,7 +14,7 @@ struct CountriesForPlayWithDIApp: App {
     var body: some Scene {
         WindowGroup {
             CountriesnavigationView(countriesNavigationViewModel: container.navigationViewModel) {
-                MainView(mainViewModel: container.makeMainViewModel())
+                CountryListView(viewModel: container.countriesFlowContainer.countryListViewModel())
             }
             .environmentObject(container)
         }

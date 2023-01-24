@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Countries: Codable, Identifiable {
-    var id = UUID()
-    let string: String
+public struct Country: Codable, Identifiable {
+    public var id = UUID()
+    let name: String
+    let capital: String
+    let flag: String
 }
